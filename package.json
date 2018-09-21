@@ -1,0 +1,17 @@
+{
+  "name": "socket-example2",
+  "version": "1.0.0",
+  "description": "Demo socket.io project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Andrew Errity",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^1.7.4"
+  },
+  "devDependencies": {}
+}

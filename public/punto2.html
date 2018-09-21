@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Socket.io Demo</title>
+      <meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Poppins" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	  
+		<!-- Custom styles for this template -->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/owl.theme.default.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+   </head>
+   <body>
+
+      <h1>Welcome to the Products Page</h1>
+      <h3 id="message"></h3>
+     
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="img-fluid" src="img/logos_metepec.png" style="max-height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class=" mt-2 mt-md-0 text-right ml-auto">
+          <h5 class="text-white align-middle mb-0">Kiosco de Atención Ciudadana de Metepec</h5>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+    <!-- <h5 class="text-center">Bienvenido</h5> -->
+    <div class="row">
+      <div class="col-8">
+        <div class="row">
+          <div class="col-3">
+            <a href="https://pagosmetepec.mx/pagar_servicios/" target="_blank">
+              <img src="img/predio.svg" class="img-fluid section">
+              <h5 class="text-center pt-3">Pago Predial</h5>
+            </a>
+          </div>
+          <div class="col-3">
+              <a href="http://189.195.65.180/SIAC_FE/Paginas/Facturacion/Frm_Ope_Estado_Cuenta.aspx" target="_blank">
+            <img src="img/agua.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">Pago Agua</h5>
+          </a>
+          </div>
+          <div class="col-3">
+              <a href="https://pagosmetepec.mx/pagar_servicios/" target="_blank">
+            <img src="img/tramitesMunicipales.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">Pago de Trámites Municipales</h5>
+          </a>
+          </div>
+          <div class="col-3">
+              <a href="http://200.52.114.133/licencias3/acerca.php" target="_blank">
+            <img src="img/sare.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">SARE</h5>
+          </a>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-3">
+              <a href="http://www.metepec.gob.mx/pagina/gestor_web.php" target="_blank">
+            <img src="img/atencionCiudadana.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">Atención Ciudadana</h5>
+          </a>
+          </div>
+          <div class="col-3">
+              <a href="http://200.52.114.133/citaslinea/" target="_blank">
+            <img src="img/citasenLinea.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">Citas en Línea para Trámites</h5>
+          </a>
+          </div>
+          <div class="col-3">
+              <a href="http://sistemas.metepec.gob.mx/Bolsa/" target="_blank">
+            <img src="img/solicituddeEmpleo.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">Solicitud de Empleo</h5>
+          </a>
+          </div>
+          <div class="col-3">
+              <a href="http://metepec.gob.mx/pagina/transparencia.php" target="_blank">
+            <img src="img/transparencia.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">Transparecia</h5>
+          </a>
+          </div>
+        </div>
+        <div class="row pt-2 justify-content-center">
+          <div class="col-3">
+              <a href="https://www.gob.mx/ActaNacimiento/" target="_blank">
+            <img src="img/curp.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">Obtener Curp</h5>
+          </a>
+          </div>
+          <div class="col-3">
+              <a href="https://consultas.curp.gob.mx/" target="_blank">
+            <img src="img/acta.svg" class="img-fluid section">
+            <h5 class="text-center pt-3">Obtener Acta de Nacimiento</h5>
+          </a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-3 offset-1">
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="img/1.jpg">
+          </div>
+          <div class="item">
+            <img src="img/2.jpg">
+          </div>
+          <div class="item">
+            <img src="img/3.jpg">
+          </div>
+          <div class="item">
+            <img src="img/4.jpg">
+          </div>
+          <div class="item">
+            <img src="img/5.jpg">
+          </div>
+        </div>
+        <hr>
+        <div class="card bg-light mb-3" style="">
+          <div class="card-header">
+            <h5 class="mb-0"><img style="max-width: 20px;vertical-align: baseline;" src="img/icon-01.svg"> Noticias</h5>
+          </div>
+          <img class="card-img-top" src="img/noticia1.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">CONMEMORA METEPEC GESTA HEROICA DE LOS NIÑOS HÉROES</h5>
+            <p>Se pasó lista de honor a los miembros del Heroico Colegio Militar[...]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  demo boton 1
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/owl.carousel.js"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+	loop: true,
+	margin: 0,
+	nav: false,
+	autoplay: true,
+	autoplayTimeout: 3000,
+	responsive: {
+	  0: {
+		items: 1
+	  },
+	  600: {
+		items: 1
+	  },
+	  1000: {
+		items: 1
+	  }
+	}
+  })
+</script>
+
+
+
+		 <script src="/socket.io/socket.io.js"></script>
+		 <script>
+        const socket = io('/products');
+  
+        socket.on('connectionMessage', message => {
+            document.getElementById('message').innerHTML = message;
+        });
+        </script>
+   </body>
+</html>
