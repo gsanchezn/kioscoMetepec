@@ -24,6 +24,7 @@ nsp.on('connection', function(socket) {
     // to see it, open another browser window
 	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room
   });
+
 });
 
 var nspTwo = io.of('/kiosco2');

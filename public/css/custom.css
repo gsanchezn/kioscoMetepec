@@ -2,6 +2,7 @@
 font-family: 'Poppins', sans-serif; */
 body {
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 .bg-dark {
     background-color: #015d52!important;
@@ -49,7 +50,7 @@ h3, .h3 {
  }
 
  .modal-dialog {
-    max-width: 50%;
+    max-width: 90%;
     margin: 1.75rem auto;
     
 }
@@ -68,7 +69,7 @@ h3, .h3 {
     color: #ffffff;
 }
 .imagen-modal{
-    max-height: 225px;
+    max-height: 65vh;
 }
 .modal-header {
     border-bottom: 1px solid #666;
@@ -88,4 +89,9 @@ h3, .h3 {
 }
 .modal-body video{
     width: 100%
+}
+.col-five {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
 }
