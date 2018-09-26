@@ -19,7 +19,7 @@ var nsp = io.of('/kiosco1');
 nsp.on('connection', function(socket) {
    console.log('someone connected kiosco1');
    socket.on('linkClicked', function(msg){
-    console.log("msg: " + msg);
+    console.log("msg vista del lado del servidorrrrrrrrr: " + msg);
     // broadcast to all other users -- originating client does not receive this message.
     // to see it, open another browser window
 	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room

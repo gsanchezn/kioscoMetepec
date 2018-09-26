@@ -50,7 +50,7 @@
 			<div class="col-9">
 				<div class="row">
 					<div class="col-3 col-five">
-						<a class="fireGroup" id="btn-1" href="#" data-toggle="modal" data-target="#modal1" data-url="http://pagosmetepec.mx/pagar_servicios/&output=embed">
+						<a class="fireGroup" id="btn-1" href="#" data-toggle="modal" data-target="#modal1" data-url="http://pagosmetepec.mx/pagar_servicios/">
 							<img src="../img/predio.svg" class="img-fluid section">
 							<h5 class="text-center pt-4">Pago Predial</h5>
 						</a>
@@ -357,7 +357,7 @@
 
 
 	<!-- Modal animaciones -->
-	<div class="modal fade" id="modalAnimacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	<div class="modal fade modalAnimacion" id="modal-anim" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	 aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
@@ -372,7 +372,7 @@
 	</div>
 
 	<!-- Modal animaciones slider -->
-	<div class="modal fade" id="modalAnimacionSlider" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	<div class="modal fade modalAnimacionSlider" id="modalAnimacionSli" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	 aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 50%;">
 			<div class="modal-content">
@@ -440,31 +440,30 @@
 
 			// listen to server events related to messages coming from other users. Call this event "newClick"
 			socket.on('newClick', function (msg) {
+
+
+
 				$(".modal-black").modal('hide');
-				$('#modalAnimacion').modal('hide');
-				$('#modalAnimacionSlider').modal('hide');
+				$('.modalAnimacion').modal('hide');
+				$('.modalAnimacionSlider').modal('hide');
+				$('#modal-anim').removeClass("modalAnimacion");
+				$('#modalAnimacionSli').removeClass("modalAnimacionSlider");
 				$(msg).modal('show');
-				limpiarTodo()
-				window.clearTimeout(timeoutID);
+			
 				setTimeout(function () {
 					$(msg).modal('hide');
-					limpiarTodo();
-					startTimer();
 					$(".modal-black").modal('hide');
-					window.clearTimeout(timeoutID);
-					$('#modalAnimacion').modal('hide');
-					$('#modalAnimacionSlider').modal('hide');
-					setup();
+					$('.modalAnimacion').modal('hide');
+					$('.modalAnimacionSlider').modal('hide');
+					$('#modal-anim').addClass("modalAnimacion");
+					$('#modalAnimacionSli').addClass("modalAnimacionSlider");
 				}, 20000);
-
 				console.log("got new clickdddd: " + msg);
 			});
 
 			// cuando se le da click a cada circulo del menu
 			$('.fireGroup').on('click', function () {
 				var linkClicked = $(this).attr('data-target');
-
- limpiarTodo();
 				/* var iframeUrl = $(this).attr('data-url');
 
 				window.open(iframeUrl, '_self');
@@ -565,51 +564,51 @@
 			function cero() {
 
 				document.getElementById('dinamic-title').innerHTML = '';
-				$('#modalAnimacion').modal('hide');
+				$('.modalAnimacion').modal('hide');
 			}
 			function ceroSlider() {
 
 				document.getElementById('dinamic-title').innerHTML = '';
-				$('#modalAnimacionSlider').modal('hide');
+				$('.modalAnimacionSlider').modal('hide');
 			}
 
 			function first() {
-				$('#modalAnimacion').modal('show')
+				$('.modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', one);
 				$("#dinamic-title").append("Pago Predial");
 			}
 
 			function second() {
-				$('#modalAnimacionSlider').modal('show')
+				$('.modalAnimacionSlider').modal('show')
 
 			}
 
 			function third() {
-				$('#modalAnimacion').modal('show')
+				$('.modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', three);
 				$("#dinamic-title").append("Pago de Trámites Municipales");
 			}
 
 			function fourth() {
-				$('#modalAnimacion').modal('show')
+				$('.modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', four);
 				$("#dinamic-title").append("SARE");
 			}
 
 			function fifth() {
-				$('#modalAnimacion').modal('show')
+				$('.modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', five);
 				$("#dinamic-title").append("Atención Ciudadana");
 			}
 
 			function sixth() {
-				$('#modalAnimacion').modal('show')
+				$('.modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', six);
 				$("#dinamic-title").append("Citas en Línea para Trámites");
 			}
 
 			function seventh() {
-				$('#modalAnimacion').modal('show')
+				$('.modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', seven);
 				$("#dinamic-title").append("Solicitud de Empleo");
 			}
@@ -617,13 +616,13 @@
 
 
 			function nineth() {
-				$('#modalAnimacion').modal('show')
+				$('.modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', nine);
 				$("#dinamic-title").append("Obtener CURP");
 			}
 
 			function tenth() {
-				$('#modalAnimacion').modal('show')
+				$('.modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', ten);
 				$("#dinamic-title").append("Obtener Acta de Nacimiento");
 			}
@@ -714,10 +713,10 @@
 	
 	 */
 
-			$('#modalAnimacion').on('show.bs.modal', function (e) {
+			$('.modalAnimacion').on('show.bs.modal', function (e) {
 				$('#modalAnimacion-img').addClass('animated flipInY');
 			})
-			$('#modalAnimacion').on('shown.bs.modal', function (e) {
+			$('.modalAnimacion').on('shown.bs.modal', function (e) {
 				$('.modal-backdrop').addClass('modal-backdrop-white');
 			})
 		}
@@ -742,8 +741,8 @@
 		
 			// do something
 			
-
-			$('#modalAnimacion').modal('hide');
+			$('.modalAnimacionSlider').modal('hide');
+			$('.modalAnimacion').modal('hide');
 			
 			console.log("estado activooo")
 
