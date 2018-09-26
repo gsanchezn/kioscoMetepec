@@ -457,7 +457,7 @@
 					$('.modalAnimacionSlider').modal('hide');
 					$('#modal-anim').addClass("modalAnimacion");
 					$('#modalAnimacionSli').addClass("modalAnimacionSlider");
-				}, 20000);
+				}, 120000);
 				console.log("got new clickdddd: " + msg);
 			});
 
@@ -524,7 +524,7 @@
 
 		function startTimer() {
 			// wait 2 seconds before calling goInactive
-			timeoutID = window.setTimeout(goInactive, 6000);
+			timeoutID = window.setTimeout(goInactive, 60000);
 		}
 
 		function resetTimer(e) {
@@ -632,76 +632,76 @@
 
 			clearr = setTimeout(function () {
 				cero();
-			}, 15000);
+			}, 30000);
 
 			a = setTimeout(function () {
 				second();
-			}, 30000);
-
-			clearr = setTimeout(function () {
-				ceroSlider();
-			}, 45000);
-
-			b = setTimeout(function () {
-				third();
 			}, 60000);
 
 			clearr = setTimeout(function () {
-				cero();
-			}, 75000);
-
-			c = setTimeout(function () {
-				fourth();
+				ceroSlider();
 			}, 90000);
 
-			clearr = setTimeout(function () {
-				cero();
-			}, 70000);
-
-			d = setTimeout(function () {
-				fifth();
-			}, 80000);
-
-			clearr = setTimeout(function () {
-				cero();
-			}, 90000);
-
-			e = setTimeout(function () {
-				sixth();
-			}, 100000);
-
-			clearr = setTimeout(function () {
-				cero();
-			}, 110000);
-
-			f = setTimeout(function () {
-				seventh();
+			b = setTimeout(function () {
+				third();
 			}, 120000);
-
-			clearr = setTimeout(function () {
-				cero();
-			}, 130000);
-
-			h = setTimeout(function () {
-				nineth();
-			}, 140000);
 
 			clearr = setTimeout(function () {
 				cero();
 			}, 150000);
 
-			i = setTimeout(function () {
-				tenth();
-			}, 160000);
+			c = setTimeout(function () {
+				fourth();
+			}, 180000);
 
 			clearr = setTimeout(function () {
 				cero();
-			}, 170000);
+			}, 210000);
+
+			d = setTimeout(function () {
+				fifth();
+			}, 240000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 270000);
+
+			e = setTimeout(function () {
+				sixth();
+			}, 300000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 330000);
+
+			f = setTimeout(function () {
+				seventh();
+			}, 360000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 390000);
+
+			h = setTimeout(function () {
+				nineth();
+			}, 420000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 450000);
+
+			i = setTimeout(function () {
+				tenth();
+			}, 480000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 510000);
 
 			setTimeout(function () {
 				limpiarTodo()
 				setup()
-			}, 180000);
+			}, 540000);
 
 			/* 	$('#modalAnimacion').modal('show')
 				$('#modalAnimacion-img').attr('src', one);
