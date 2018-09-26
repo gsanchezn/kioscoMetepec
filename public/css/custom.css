@@ -59,14 +59,14 @@ h3, .h3 {
     border: 0px solid rgba(0,0,0,.2);
 }
 .modal-header h5 {
-    color: #ffffff !important;
+    color: #015d52 !important;
     font-size: 45px
 }
 .modal-backdrop.show {
     opacity: .90;
 }
 .modal-body {
-    color: #ffffff;
+    color: #015d52;
 }
 .imagen-modal{
     max-height: 65vh;
@@ -88,6 +88,15 @@ h3, .h3 {
     left: 0;
     z-index: 1040;
     background-color: #fff !important;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #fff;
 }
 .modal-body video{
     width: 100%
