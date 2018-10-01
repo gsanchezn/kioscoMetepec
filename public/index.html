@@ -4,27 +4,29 @@
 <head>
 	<title>Kiosco Metepec</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Poppins" rel="stylesheet">
 	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom styles for this template -->
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/owl.theme.default.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
-	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+	<link href="../css/owl.carousel.css" rel="stylesheet">
+	<link href="../css/owl.theme.default.css" rel="stylesheet">
+	<link href="../css/custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="../fonts/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="../css/animate.css">
 </head>
 
 <body>
 
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-		<div class="container">
-			<a class="iframe-btn" href="#">
-				<i class="fa fa-th" aria-hidden="true"></i>
+		<div class="container-fluid">
+			<a class="iframe-btn" href="/kiosco1" style="padding-right: 20px">
+				<i class="fa fa-chevron-circle-left" aria-hidden="true" style="color: #ffffff"> regresar</i>
 			</a>
 			<a class="navbar-brand" href="#">
-				<img class="img-fluid" src="img/logos_metepec.png" style="max-height: 40px;">
+				<img class="img-fluid" src="../img/logos_metepec.png" style="max-height: 40px;">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
 			 aria-expanded="false" aria-label="Toggle navigation">
@@ -32,339 +34,389 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<div class=" mt-2 mt-md-0 text-right ml-auto">
-					<h5 class="text-white align-middle mb-0">Kiosco de Atención Ciudadana de Metepec</h5>
+					<h5 class="text-white align-middle mb-0">Sistema Digital Multiservicios</h5>
 				</div>
 			</div>
 		</div>
 	</nav>
-	<main role="main" class="container iframe-content">
+	<main role="main" class="iframe-content">
 		<div class="embed-responsive embed-responsive-21by9">
-			<iframe class="embed-responsive-item pagina-tramite" id="iframeContainer" src=""></iframe>
+			<iframe class="embed-responsive-item pagina-tramite" id="iframeContainer" src="" style="height: 100vh;"> </iframe>
 		</div>
 	</main>
-
-	<main role="main" class="container main-tramites">
+	<main role="main" class="container-fluid main-tramites">
 		<!-- <h5 class="text-center">Bienvenido</h5> -->
-		<div class="row">
-			<div class="col-8">
+		<div class="row align-items-center" style="height: 85vh">
+			<div class="col-9">
 				<div class="row">
-					<div class="col-3">
-						<a class="fireGroup" id="btn-1" href="#" data-toggle="modal" data-target="#modal1" data-url="https://pagosmetepec.mx/pagar_servicios/">
-							<img src="img/predio.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Pago Predial</h5>
+					<div class="col-3 col-five">
+						<a class="fireGroup" id="btn-1" href="#" data-toggle="modal" data-target="#modal1" data-url="http://pagosmetepec.mx/pagar_servicios/">
+							<img src="../img/predio.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Pago Predial</h5>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="col-3 col-five">
 						<a class="fireGroup" id="btn-2" data-toggle="modal" data-target="#modal2" href="#" data-url="http://189.195.65.180/SIAC_FE/Paginas/Facturacion/Frm_Ope_Estado_Cuenta.aspx">
-							<img src="img/agua.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Pago Agua</h5>
+							<img src="../img/agua.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Pago Agua</h5>
 						</a>
 					</div>
-					<div class="col-3">
-						<a class="fireGroup" id="btn-3" href="#" data-toggle="modal" data-target="#modal3" data-url="https://pagosmetepec.mx/pagar_servicios/">
-							<img src="img/tramitesMunicipales.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Pago de Trámites Municipales</h5>
+					<div class="col-3 col-five">
+						<a class="fireGroup" id="btn-3" href="#" data-toggle="modal" data-target="#modal3" data-url="https://pagosmetepec.mx/pagar_servicios">
+							<img src="../img/tramitesMunicipales.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Pago de Trámites Municipales</h5>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="col-3 col-five">
 						<a class="fireGroup" id="btn-4" href="#" data-toggle="modal" data-target="#modal4" data-url="http://200.52.114.133/licencias3/acerca.php">
-							<img src="img/sare.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">SARE</h5>
+							<img src="../img/sare.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">SARE</h5>
 						</a>
 					</div>
-				</div>
-				<div class="row pt-2">
-					<div class="col-3">
+					<div class="col-3 col-five">
 						<a class="fireGroup" id="btn-5" href="#" data-toggle="modal" data-target="#modal5" data-url="http://www.metepec.gob.mx/pagina/gestor_web.php">
-							<img src="img/atencionCiudadana.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Atención Ciudadana</h5>
-						</a>
-					</div>
-					<div class="col-3">
-						<a class="fireGroup" id="btn-6" href="#" data-toggle="modal" data-target="#modal6" data-url="http://200.52.114.133/citaslinea/">
-							<img src="img/citasenLinea.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Citas en Línea para Trámites</h5>
-						</a>
-					</div>
-					<div class="col-3">
-						<a class="fireGroup" id="btn-7" href="#" data-toggle="modal" data-target="#modal7" data-url="http://sistemas.metepec.gob.mx/Bolsa/">
-							<img src="img/solicituddeEmpleo.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Solicitud de Empleo</h5>
-						</a>
-					</div>
-					<div class="col-3">
-						<a class="fireGroup" id="btn-8" href="#" data-toggle="modal" data-target="#modal8" data-url="http://metepec.gob.mx/pagina/transparencia.php">
-							<img src="img/transparencia.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Transparecia</h5>
+							<img src="../img/atencionCiudadana.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Atención Ciudadana</h5>
 						</a>
 					</div>
 				</div>
-				<div class="row pt-2 justify-content-center">
-					<div class="col-3">
-						<a class="fireGroup" id="btn-9" href="#" data-toggle="modal" data-target="#modal9" data-url="https://www.gob.mx/ActaNacimiento/">
-							<img src="img/curp.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Obtener Curp</h5>
+				<div class="pt-4 pb-4"></div>
+
+				<div class="row pt-2 align-items-center">
+					<div class="col-3 col-five">
+						<a class="fireGroup" id="btn-6" href="#" data-toggle="modal" data-target="#modal6" data-url="http://200.52.114.133/citaslinea/index.php">
+							<img src="../img/citasenLinea.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Citas en Línea para Trámites</h5>
 						</a>
 					</div>
-					<div class="col-3">
-						<a class="fireGroup" id="btn-10" href="#" data-toggle="modal" data-target="#modal10" data-url="https://consultas.curp.gob.mx/">
-							<img src="img/acta.svg" class="img-fluid section">
-							<h5 class="text-center pt-3">Obtener Acta de Nacimiento</h5>
+					<div class="col-3 col-five">
+						<a class="fireGroup" id="btn-7" href="#" data-toggle="modal" data-target="#modal7" data-url="http://sistemas.metepec.gob.mx/Bolsa/index.php">
+							<img src="../img/solicituddeEmpleo.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Solicitud de Empleo</h5>
+						</a>
+					</div>
+					<div class="col-3 col-five">
+						<a class="fireGroup" id="btn-9" href="#" data-toggle="modal" data-target="#modal9" data-url="https://consultas.curp.gob.mx">
+							<img src="../img/curp.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Obtener Curp</h5>
+						</a>
+					</div>
+					<div class="col-3 col-five">
+						<a class="fireGroup" id="btn-10" href="#" data-toggle="modal" data-target="#modal10" data-url="http://www.gob.mx/ActaNacimiento">
+							<img src="../img/acta.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Obtener Acta de Nacimiento</h5>
+						</a>
+					</div>
+					<div class="col-3 col-five">
+						<a class="" id="btn-10" href="../ayuda.html">
+							<img src="../img/ayuda.svg" class="img-fluid section">
+							<h5 class="text-center pt-4">Ayuda</h5>
 						</a>
 					</div>
 
 				</div>
 
 			</div>
-			<div class="col-3 offset-1">
-
+			<div class="col-3">
+				<!-- <div class="embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item pagina-tramite" id="" src="http://www.metepec.gob.mx/pagina/galerias2.php" > </iframe>
+				</div> -->
 				<div class="owl-carousel owl-theme">
 					<div class="item">
-						<img src="img/1.jpg">
+						<img src="../img/1.jpg">
 					</div>
 					<div class="item">
-						<img src="img/2.jpg">
+						<img src="../img/2.jpg">
 					</div>
 					<div class="item">
-						<img src="img/3.jpg">
+						<img src="../img/3.jpg">
 					</div>
 					<div class="item">
-						<img src="img/4.jpg">
+						<img src="../img/4.jpg">
 					</div>
 					<div class="item">
-						<img src="img/5.jpg">
+						<img src="../img/5.jpg">
 					</div>
 				</div>
-				<hr>
-				<div class="card bg-light mb-3" style="">
+
+				<div class="card bg-light mb-3">
 					<div class="card-header">
-						<h5 class="mb-0"><img style="max-width: 20px;vertical-align: baseline;" src="img/icon-01.svg"> Noticias</h5>
+						<h5 class="mb-0"><img style="max-width: 20px;vertical-align: baseline;" src="../img/icon-01.svg"> Noticias</h5>
 					</div>
-					<img class="card-img-top" src="img/noticia1.jpeg" alt="Card image cap">
+					<img class="card-img-top" src="../img/noticia1.jpeg" alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">CONMEMORA METEPEC GESTA HEROICA DE LOS NIÑOS HÉROES</h5>
-						<p>Se pasó lista de honor a los miembros del Heroico Colegio Militar[...]</p>
+						<h5 class="card-title">CONMEMORA METEPEC GESTA HEROICA...</h5>
+						<!-- <p>Se pasó lista de honor a los miembros del Heroico Colegio Militar[...]</p> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
+
+
 	<!-- Modal -->
-	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">Pago Predial</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 1
+					<img src="../img/predio.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">Pago Agua</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 2
+					<img src="../img/agua.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">Pago de Trámites municipales</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 3
+					<img src="../img/tramitesMunicipales.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">SARE</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 4
+					<img src="../img/sare.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">ATENCIÓN CIUDADANA</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 5
+					<img src="../img/atencionCiudadana.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">CITAS EN LÍNEA PARA TRÁMITES</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 6
+					<img src="../img/citasenLinea.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">SOLICITUD DE EMPLEO</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 7
+					<img src="../img/solicituddeEmpleo.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">TRANSPAREnCIA</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 8
+					<img src="../img/transparencia.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">OBTENER CURP</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 9
+					<img src="../img/curp.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade modal-black" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+					<h5 class="modal-title" id="exampleModalLabel">OBTENER ACTA DE NACIMIENTO</h5>
 				</div>
 				<div class="modal-body">
-					demo boton 10
+					<img src="../img/acta.svg" class="img-fluid imagen-modal">
+					<h3 class="text-center">Tramite de usuario en proceso, gracias por utilizar el servicio de Kiosco Metepec</h3>
+
+
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<img src="../img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
+
+	<!-- Modal animaciones -->
+	<div class="modal fade modalAnimacion" id="modal-anim" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+
+				<div class="modal-body">
+					<img id="modalAnimacion-img" src="" class="img-fluid imagen-modal">
+					<h3 id="dinamic-title" class="text-center pt-4"></h3>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal animaciones slider -->
+	<div class="modal fade modalAnimacionSlider" id="modalAnimacionSli" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 50%;">
+			<div class="modal-content">
+
+				<div class="modal-body">
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<img src="../img/1.jpg">
+						</div>
+						<div class="item">
+							<img src="../img/2.jpg">
+						</div>
+						<div class="item">
+							<img src="../img/3.jpg">
+						</div>
+						<div class="item">
+							<img src="../img/4.jpg">
+						</div>
+						<div class="item">
+							<img src="../img/5.jpg">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	 crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 
-	<script src="js/owl.carousel.js"></script>
+	<script src="../js/owl.carousel.js"></script>
+
+	<script src="../js/Chain.js"></script>
 	<script>
 		$('.owl-carousel').owlCarousel({
 			loop: true,
 			margin: 0,
 			nav: false,
 			autoplay: true,
-			autoplayTimeout: 3000,
+			autoplayTimeout: 4000,
 			responsive: {
 				0: {
 					items: 1
@@ -381,44 +433,58 @@
 
 
 
-	<script src="/socket.io/socket.io.js"></script>
+	<script src="../js/socket.io.js"></script>
 	<script>
 		$(document).ready(function () {
-			var socket = io();
+			var socket = io('/');
 
 			// listen to server events related to messages coming from other users. Call this event "newClick"
 			socket.on('newClick', function (msg) {
+
+
+
+				$(".modal-black").modal('hide');
+				$('.modalAnimacion').modal('hide');
+				$('.modalAnimacionSlider').modal('hide');
+				$('#modal-anim').removeClass("modalAnimacion");
+				$('#modalAnimacionSli').removeClass("modalAnimacionSlider");
 				$(msg).modal('show');
-				setTimeout(function () { $(msg).modal('hide'); }, 4000);
+			
+				setTimeout(function () {
+					$(msg).modal('hide');
+					$(".modal-black").modal('hide');
+					$('.modalAnimacion').modal('hide');
+					$('.modalAnimacionSlider').modal('hide');
+					$('#modal-anim').addClass("modalAnimacion");
+					$('#modalAnimacionSli').addClass("modalAnimacionSlider");
+				}, 120000);
 				console.log("got new clickdddd: " + msg);
 			});
 
-			// when clicked, do some action
+			// cuando se le da click a cada circulo del menu
 			$('.fireGroup').on('click', function () {
 				var linkClicked = $(this).attr('data-target');
-
-
 				var iframeUrl = $(this).attr('data-url');
-				
+
 				window.open(iframeUrl, '_blank');
-
-
 
 
 				/* $(".iframe-btn").toggle();
 				$(".iframe-content").show();
-				$(".main-tramites").hide();
+				$(".main-tramites").hide(); */
 
-				$(".iframe-btn").click(function () {
+				/* $(".iframe-btn").click(function () {
 					$(".iframe-btn").hide();
 					$(".iframe-content").hide();
 					$(".main-tramites").show();
-				});
+					console.log("se esocndio modal negra fondo")
+				}); */
 
-				var iframeUrl = $(this).attr('data-url');
+			/* 	var iframeUrl = $(this).attr('data-url');
 				$('#iframeContainer').attr('src', iframeUrl);
-
-
+				setInterval(function () {
+					window.clearTimeout(timeoutID);
+				}, 1000);
 				console.log(iframeUrl); */
 
 				console.log(linkClicked);
@@ -429,22 +495,262 @@
 
 		});
 
+		var timeoutID;
+		var clearr;
+		var a;
+		var b;
+		var c;
+		var d;
+		var e;
+		var f;
+		var g;
+		var h;
+		var i;
+		var j;
 
-/* if (document.getElementById('btn-1').onclick) {
-				$('#modal1').modal('show');
+		function setup() {
+			this.addEventListener("mousemove", resetTimer, false);
+			this.addEventListener("mousedown", resetTimer, false);
+			this.addEventListener("keypress", resetTimer, false);
+			this.addEventListener("DOMMouseScroll", resetTimer, false);
+			this.addEventListener("mousewheel", resetTimer, false);
+			this.addEventListener("touchmove", resetTimer, false);
+			this.addEventListener("MSPointerMove", resetTimer, false);
+
+			startTimer()
+		}
+
+		setup()
+
+		function startTimer() {
+			// wait 2 seconds before calling goInactive
+			timeoutID = window.setTimeout(goInactive, 60000);
+		}
+
+		function resetTimer(e) {
+			window.clearTimeout(timeoutID);
+
+			goActive();
+		}
+
+		function goInactive() {
+			window.clearTimeout(clearr);
+			window.clearTimeout(a);
+			window.clearTimeout(b);
+			window.clearTimeout(c);
+			window.clearTimeout(d);
+			window.clearTimeout(e);
+			window.clearTimeout(f);
+			window.clearTimeout(g);
+			window.clearTimeout(h);
+			window.clearTimeout(i);
+			window.clearTimeout(j);
+			
+
+			console.log("estado inactivo zzzzzzzzz")
+
+			var one = "../img/predio.svg"
+			var two = "../img/agua.svg"
+			var three = "../img/tramitesMunicipales.svg"
+			var four = "../img/sare.svg"
+			var five = "../img/atencionCiudadana.svg"
+			var six = "../img/citasenLinea.svg"
+			var seven = "../img/solicituddeEmpleo.svg"
+			var eight = "../img/transparencia.svg"
+			var nine = "../img/curp.svg"
+			var ten = "../img/acta.svg"
 
 
-			} else if (document.getElementById('btn-2').onclick) {
-				$('#modal1').modal('show');
-				window.open("https://pagosmetepec.mx/pagar_servicios/")
-			} else if (document.getElementById('btn-3').onclick) {
-				$('#modal1').modal('show');
-				window.open("https://pagosmetepec.mx/pagar_servicios/")
-			} else {
-				console.log("boton last click");
-			} */
+			function cero() {
+
+				document.getElementById('dinamic-title').innerHTML = '';
+				$('.modalAnimacion').modal('hide');
+			}
+			function ceroSlider() {
+
+				document.getElementById('dinamic-title').innerHTML = '';
+				$('.modalAnimacionSlider').modal('hide');
+			}
+
+			function first() {
+				$('.modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', one);
+				$("#dinamic-title").append("Pago Predial");
+			}
+
+			function second() {
+				$('.modalAnimacionSlider').modal('show')
+
+			}
+
+			function third() {
+				$('.modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', three);
+				$("#dinamic-title").append("Pago de Trámites Municipales");
+			}
+
+			function fourth() {
+				$('.modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', four);
+				$("#dinamic-title").append("SARE");
+			}
+
+			function fifth() {
+				$('.modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', five);
+				$("#dinamic-title").append("Atención Ciudadana");
+			}
+
+			function sixth() {
+				$('.modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', six);
+				$("#dinamic-title").append("Citas en Línea para Trámites");
+			}
+
+			function seventh() {
+				$('.modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', seven);
+				$("#dinamic-title").append("Solicitud de Empleo");
+			}
+
+
+
+			function nineth() {
+				$('.modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', nine);
+				$("#dinamic-title").append("Obtener CURP");
+			}
+
+			function tenth() {
+				$('.modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', ten);
+				$("#dinamic-title").append("Obtener Acta de Nacimiento");
+			}
+
+			cero();
+			first();
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 30000);
+
+			a = setTimeout(function () {
+				second();
+			}, 60000);
+
+			clearr = setTimeout(function () {
+				ceroSlider();
+			}, 90000);
+
+			b = setTimeout(function () {
+				third();
+			}, 120000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 150000);
+
+			c = setTimeout(function () {
+				fourth();
+			}, 180000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 210000);
+
+			d = setTimeout(function () {
+				fifth();
+			}, 240000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 270000);
+
+			e = setTimeout(function () {
+				sixth();
+			}, 300000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 330000);
+
+			f = setTimeout(function () {
+				seventh();
+			}, 360000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 390000);
+
+			h = setTimeout(function () {
+				nineth();
+			}, 420000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 450000);
+
+			i = setTimeout(function () {
+				tenth();
+			}, 480000);
+
+			clearr = setTimeout(function () {
+				cero();
+			}, 510000);
+
+			setTimeout(function () {
+				limpiarTodo()
+				setup()
+			}, 540000);
+
+			/* 	$('#modalAnimacion').modal('show')
+				$('#modalAnimacion-img').attr('src', one);
+	
+				setTimeout(function () {
+					$('#modalAnimacion').modal('hide')
+				}, 5000);
+	
+	
+	 */
+
+			$('.modalAnimacion').on('show.bs.modal', function (e) {
+				$('#modalAnimacion-img').addClass('animated flipInY');
+			})
+			$('.modalAnimacion').on('shown.bs.modal', function (e) {
+				$('.modal-backdrop').addClass('modal-backdrop-white');
+			})
+		}
+
+		function limpiarTodo() {
+			window.clearTimeout(clearr);
+			window.clearTimeout(a);
+			window.clearTimeout(b);
+			window.clearTimeout(c);
+			window.clearTimeout(d);
+			window.clearTimeout(e);
+			window.clearTimeout(f);
+			window.clearTimeout(g);
+			window.clearTimeout(h);
+			window.clearTimeout(i);
+			window.clearTimeout(j);
+			window.clearTimeout(startTimer);
+		}
+
+		function goActive() {
+			
+		
+			// do something
+			
+			$('.modalAnimacionSlider').modal('hide');
+			$('.modalAnimacion').modal('hide');
+			
+			console.log("estado activooo")
+
+		}
 
 	</script>
 </body>
+
+
 
 </html>
