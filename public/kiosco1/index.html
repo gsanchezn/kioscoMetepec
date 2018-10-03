@@ -121,7 +121,7 @@
 				<!-- <div class="embed-responsive embed-responsive-4by3">
 					<iframe class="embed-responsive-item pagina-tramite" id="" src="http://www.metepec.gob.mx/pagina/galerias2.php" > </iframe>
 				</div> -->
-				<div class="owl-carousel owl-theme">
+				<!-- <div class="owl-carousel owl-theme">
 					<div class="item">
 						<img src="../img/1.jpg">
 					</div>
@@ -137,8 +137,35 @@
 					<div class="item">
 						<img src="../img/5.jpg">
 					</div>
-				</div>
-
+				</div> -->
+				<div class="">
+					
+					<div class="row">
+					  <div class="col-md-10 col-md-offset-1">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+						  </ol>
+						  <div class="carousel-inner" role="listbox">
+						  </div>
+						  <!-- Left and right controls -->
+						  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					  </div>
+					</div>
+				  </div>
 				<div class="card bg-light mb-3">
 					<div class="card-header">
 						<h5 class="mb-0"><img style="max-width: 20px;vertical-align: baseline;" src="../img/icon-01.svg"> Noticias</h5>
@@ -401,8 +428,7 @@
 		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
@@ -410,8 +436,9 @@
 	<script src="../js/owl.carousel.js"></script>
 
 	<script src="../js/Chain.js"></script>
+
 	<script>
-		$('.owl-carousel').owlCarousel({
+		/* $('.owl-carousel').owlCarousel({
 			loop: true,
 			margin: 0,
 			nav: false,
@@ -428,7 +455,37 @@
 					items: 1
 				}
 			}
-		})
+		}) */
+		$(document).ready(function () {
+			
+			
+ 
+  
+  $.getJSON("http://www.metepec.gob.mx/Kioscosdm/api.php?valor=eventos", function(data){
+
+ 
+
+    $.each(data.products, function() {
+      
+     $(".carousel-inner").append(
+        "<div class='item'>" + "<img src=''><div class='carousel-caption'><h1>" + this["name"] + "</h1></div><div class='col-md-12 text-center'> <a class='btn btn-default' href='#' data-toggle='modal' data-target='#" + this["id"] + "' id='trigger'>QUICK VIEW</a></div></div>"
+      );
+     $(".carousel-inner").find(".item:first").addClass("active");
+      
+
+      $("#myCarousel").append(
+
+                    
+      );
+      
+    });  
+  });
+  
+  
+  
+});
+
+		
 	</script>
 
 
@@ -449,7 +506,7 @@
 				$('#modal-anim').removeClass("modalAnimacion");
 				$('#modalAnimacionSli').removeClass("modalAnimacionSlider");
 				$(msg).modal('show');
-			
+
 				setTimeout(function () {
 					$(msg).modal('hide');
 					$(".modal-black").modal('hide');
@@ -545,7 +602,7 @@
 			window.clearTimeout(h);
 			window.clearTimeout(i);
 			window.clearTimeout(j);
-			
+
 
 			console.log("estado inactivo zzzzzzzzz")
 
@@ -737,13 +794,13 @@
 		}
 
 		function goActive() {
-			
-		
+
+
 			// do something
-			
+
 			$('.modalAnimacionSlider').modal('hide');
 			$('.modalAnimacion').modal('hide');
-			
+
 			console.log("estado activooo")
 
 		}
