@@ -405,7 +405,7 @@
 
 				<div class="modal-body">
 					<div class="owl-carousel owl-theme">
-						
+
 					</div>
 				</div>
 
@@ -458,6 +458,10 @@
 					dots: false,
 					items: 1,
 					loop: true,
+					margin: 0,
+					nav: false,
+					autoplay: true,
+					autoplayTimeout: 4000,
 				});
 			});
 
@@ -466,13 +470,13 @@
 				$.each(dataNoticias, function (index, img) {
 					/* $('<img>', { src: img.imagen }).appendTo(".carousel-inner"); */
 					$(".carousel-inner").append("<div class='carousel-item '>" +
-							"<img class='d-block w-100 h300' src='" + img.imagen +"' alt='First slide'>" +
-							"<div class='carousel-caption d-none d-md-block'>" +
-								"<p>" + img.titulo + "</p>" +
-							"</div>" +
-						"</div>" );
+						"<img class='d-block w-100 h300' src='" + img.imagen + "' alt='First slide'>" +
+						"<div class='carousel-caption d-none d-md-block'>" +
+						"<p>" + img.titulo + "</p>" +
+						"</div>" +
+						"</div>");
 
-						$('.carousel-inner .carousel-item:first').addClass('active');
+					$('.carousel-inner .carousel-item:first').addClass('active');
 
 					/* $('<h4>', { src: img.titulo }).appendTo(".owl-item"); */
 					console.log(img.titulo);
