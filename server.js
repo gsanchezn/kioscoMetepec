@@ -38,6 +38,27 @@ nspTwo.on('connection', function(socket) {
   });
 });
 
+var nspThree = io.of('/kiosco3');
+nspThree.on('connection', function(socket) {
+   console.log('someone connected kiosco3');
+   socket.on('linkClicked', function(msg){
+    console.log("msg: " + msg);
+    // broadcast to all other users -- originating client does not receive this message.
+    // to see it, open another browser window
+	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room
+  });
+});
+
+var nspFour = io.of('/kiosco4');
+nspFour.on('connection', function(socket) {
+   console.log('someone connected kiosco3');
+   socket.on('linkClicked', function(msg){
+    console.log("msg: " + msg);
+    // broadcast to all other users -- originating client does not receive this message.
+    // to see it, open another browser window
+	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room
+  });
+});
 
 /* io.on('connection', function(socket){
   // when linkClicked received from client... 

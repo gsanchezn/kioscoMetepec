@@ -491,9 +491,13 @@
 	<script src="../js/socket.io.js"></script>
 	<script>
 		$(document).ready(function () {
-			var socket = io('/kiosco1');
+			var socket = io('/kiosco4');
+
 			// listen to server events related to messages coming from other users. Call this event "newClick"
 			socket.on('newClick', function (msg) {
+
+
+
 				$(".modal-black").modal('hide');
 				$('.modalAnimacion').modal('hide');
 				$('.modalAnimacionSlider').modal('hide');
