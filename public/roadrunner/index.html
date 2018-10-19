@@ -22,7 +22,7 @@
 
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
 		<div class="container-fluid">
-			<a class="iframe-btn" href="/kiosco4" style="padding-right: 20px">
+			<a class="iframe-btn" href="/roadrunner" style="padding-right: 20px">
 				<i class="fa fa-chevron-circle-left" aria-hidden="true" style="color: #ffffff"> regresar</i>
 			</a>
 			<a class="navbar-brand" href="#">
@@ -108,7 +108,7 @@
 						</a>
 					</div>
 					<div class="col-3 col-five">
-						<a class="" id="btn-10" href="../ayuda4.html">
+						<a class="" id="btn-10" href="../ayudaR.html">
 							<img src="../img/ayuda.svg" class="img-fluid section">
 							<h5 class="text-center pt-4">Ayuda</h5>
 						</a>
@@ -495,7 +495,7 @@
 	<script src="../js/socket.io.js"></script>
 	<script>
 		$(document).ready(function () {
-			var socket = io('/kiosco4');
+			var socket = io('/roadrunner');
 
 			// listen to server events related to messages coming from other users. Call this event "newClick"
 			socket.on('newClick', function (msg) {

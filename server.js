@@ -60,6 +60,17 @@ nspFour.on('connection', function(socket) {
   });
 });
 
+var nspFour = io.of('/roadrunner');
+nspFour.on('connection', function(socket) {
+   console.log('someone connected roadrunner');
+   socket.on('linkClicked', function(msg){
+    console.log("msg: " + msg);
+    // broadcast to all other users -- originating client does not receive this message.
+    // to see it, open another browser window
+	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room
+  });
+});
+
 /* io.on('connection', function(socket){
   // when linkClicked received from client... 
   socket.on('linkClicked', function(msg){
