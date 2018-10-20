@@ -405,7 +405,7 @@
 
 				<div class="modal-body">
 					<div class="owl-carousel owl-theme">
-						
+
 					</div>
 				</div>
 
@@ -470,13 +470,13 @@
 				$.each(dataNoticias, function (index, img) {
 					/* $('<img>', { src: img.imagen }).appendTo(".carousel-inner"); */
 					$(".carousel-inner").append("<div class='carousel-item '>" +
-							"<img class='d-block w-100 h300' src='" + img.imagen +"' alt='First slide'>" +
-							"<div class='carousel-caption d-none d-md-block'>" +
-								"<p>" + img.titulo + "</p>" +
-							"</div>" +
-						"</div>" );
+						"<img class='d-block w-100 h300' src='" + img.imagen + "' alt='First slide'>" +
+						"<div class='carousel-caption d-none d-md-block'>" +
+						"<p>" + img.titulo + "</p>" +
+						"</div>" +
+						"</div>");
 
-						$('.carousel-inner .carousel-item:first').addClass('active');
+					$('.carousel-inner .carousel-item:first').addClass('active');
 
 					/* $('<h4>', { src: img.titulo }).appendTo(".owl-item"); */
 					console.log(img.titulo);
@@ -592,192 +592,202 @@
 			goActive();
 		}
 
+
+		// solo para mozilla firefox
+
 		function goInactive() {
-			window.clearTimeout(clearr);
-			window.clearTimeout(a);
-			window.clearTimeout(b);
-			window.clearTimeout(c);
-			window.clearTimeout(d);
-			window.clearTimeout(e);
-			window.clearTimeout(f);
-			window.clearTimeout(g);
-			window.clearTimeout(h);
-			window.clearTimeout(i);
-			window.clearTimeout(j);
+			if (navigator.userAgent.search("Firefox") >= 0) {
+				console.log("siiii, es FireFox");
+				window.clearTimeout(clearr);
+				window.clearTimeout(a);
+				window.clearTimeout(b);
+				window.clearTimeout(c);
+				window.clearTimeout(d);
+				window.clearTimeout(e);
+				window.clearTimeout(f);
+				window.clearTimeout(g);
+				window.clearTimeout(h);
+				window.clearTimeout(i);
+				window.clearTimeout(j);
 
 
-			console.log("estado inactivo zzzzzzzzz")
+				console.log("estado inactivo zzzzzzzzz")
 
-			var one = "../img/predio.svg"
-			var two = "../img/agua.svg"
-			var three = "../img/tramitesMunicipales.svg"
-			var four = "../img/sare.svg"
-			var five = "../img/atencionCiudadana.svg"
-			var six = "../img/citasenLinea.svg"
-			var seven = "../img/solicituddeEmpleo.svg"
-			var eight = "../img/transparencia.svg"
-			var nine = "../img/curp.svg"
-			var ten = "../img/acta.svg"
-
-
-			function cero() {
-
-				document.getElementById('dinamic-title').innerHTML = '';
-				$('.modalAnimacion').modal('hide');
-			}
-			function ceroSlider() {
-
-				document.getElementById('dinamic-title').innerHTML = '';
-				$('.modalAnimacionSlider').modal('hide');
-			}
-
-			function first() {
-				$('.modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', one);
-				$("#dinamic-title").append("Pago Predial");
-			}
-
-			function second() {
-				$('.modalAnimacionSlider').modal('show')
-
-			}
-
-			function third() {
-				$('.modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', three);
-				$("#dinamic-title").append("Pago de Trámites Municipales");
-			}
-
-			function fourth() {
-				$('.modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', four);
-				$("#dinamic-title").append("SARE");
-			}
-
-			function fifth() {
-				$('.modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', five);
-				$("#dinamic-title").append("Atención Ciudadana");
-			}
-
-			function sixth() {
-				$('.modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', six);
-				$("#dinamic-title").append("Citas en Línea para Trámites");
-			}
-
-			function seventh() {
-				$('.modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', seven);
-				$("#dinamic-title").append("Solicitud de Empleo");
-			}
+				var one = "../img/predio.svg"
+				var two = "../img/agua.svg"
+				var three = "../img/tramitesMunicipales.svg"
+				var four = "../img/sare.svg"
+				var five = "../img/atencionCiudadana.svg"
+				var six = "../img/citasenLinea.svg"
+				var seven = "../img/solicituddeEmpleo.svg"
+				var eight = "../img/transparencia.svg"
+				var nine = "../img/curp.svg"
+				var ten = "../img/acta.svg"
 
 
+				function cero() {
 
-			function nineth() {
-				$('.modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', nine);
-				$("#dinamic-title").append("Obtener CURP");
-			}
+					document.getElementById('dinamic-title').innerHTML = '';
+					$('.modalAnimacion').modal('hide');
+				}
+				function ceroSlider() {
 
-			function tenth() {
-				$('.modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', ten);
-				$("#dinamic-title").append("Obtener Acta de Nacimiento");
-			}
+					document.getElementById('dinamic-title').innerHTML = '';
+					$('.modalAnimacionSlider').modal('hide');
+				}
 
-			cero();
-			first();
+				function first() {
+					$('.modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', one);
+					$("#dinamic-title").append("Pago Predial");
+				}
 
-			clearr = setTimeout(function () {
+				function second() {
+					$('.modalAnimacionSlider').modal('show')
+
+				}
+
+				function third() {
+					$('.modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', three);
+					$("#dinamic-title").append("Pago de Trámites Municipales");
+				}
+
+				function fourth() {
+					$('.modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', four);
+					$("#dinamic-title").append("SARE");
+				}
+
+				function fifth() {
+					$('.modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', five);
+					$("#dinamic-title").append("Atención Ciudadana");
+				}
+
+				function sixth() {
+					$('.modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', six);
+					$("#dinamic-title").append("Citas en Línea para Trámites");
+				}
+
+				function seventh() {
+					$('.modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', seven);
+					$("#dinamic-title").append("Solicitud de Empleo");
+				}
+
+
+
+				function nineth() {
+					$('.modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', nine);
+					$("#dinamic-title").append("Obtener CURP");
+				}
+
+				function tenth() {
+					$('.modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', ten);
+					$("#dinamic-title").append("Obtener Acta de Nacimiento");
+				}
+
 				cero();
-			}, 30000);
+				first();
 
-			a = setTimeout(function () {
-				second();
-			}, 60000);
+				clearr = setTimeout(function () {
+					cero();
+				}, 30000);
 
-			clearr = setTimeout(function () {
-				ceroSlider();
-			}, 90000);
+				a = setTimeout(function () {
+					second();
+				}, 60000);
 
-			b = setTimeout(function () {
-				third();
-			}, 120000);
+				clearr = setTimeout(function () {
+					ceroSlider();
+				}, 90000);
 
-			clearr = setTimeout(function () {
-				cero();
-			}, 150000);
+				b = setTimeout(function () {
+					third();
+				}, 120000);
 
-			c = setTimeout(function () {
-				fourth();
-			}, 180000);
+				clearr = setTimeout(function () {
+					cero();
+				}, 150000);
 
-			clearr = setTimeout(function () {
-				cero();
-			}, 210000);
+				c = setTimeout(function () {
+					fourth();
+				}, 180000);
 
-			d = setTimeout(function () {
-				fifth();
-			}, 240000);
+				clearr = setTimeout(function () {
+					cero();
+				}, 210000);
 
-			clearr = setTimeout(function () {
-				cero();
-			}, 270000);
+				d = setTimeout(function () {
+					fifth();
+				}, 240000);
 
-			e = setTimeout(function () {
-				sixth();
-			}, 300000);
+				clearr = setTimeout(function () {
+					cero();
+				}, 270000);
 
-			clearr = setTimeout(function () {
-				cero();
-			}, 330000);
+				e = setTimeout(function () {
+					sixth();
+				}, 300000);
 
-			f = setTimeout(function () {
-				seventh();
-			}, 360000);
+				clearr = setTimeout(function () {
+					cero();
+				}, 330000);
 
-			clearr = setTimeout(function () {
-				cero();
-			}, 390000);
+				f = setTimeout(function () {
+					seventh();
+				}, 360000);
 
-			h = setTimeout(function () {
-				nineth();
-			}, 420000);
+				clearr = setTimeout(function () {
+					cero();
+				}, 390000);
 
-			clearr = setTimeout(function () {
-				cero();
-			}, 450000);
+				h = setTimeout(function () {
+					nineth();
+				}, 420000);
 
-			i = setTimeout(function () {
-				tenth();
-			}, 480000);
+				clearr = setTimeout(function () {
+					cero();
+				}, 450000);
 
-			clearr = setTimeout(function () {
-				cero();
-			}, 510000);
+				i = setTimeout(function () {
+					tenth();
+				}, 480000);
 
-			setTimeout(function () {
-				limpiarTodo()
-				setup()
-			}, 540000);
+				clearr = setTimeout(function () {
+					cero();
+				}, 510000);
 
-			/* 	$('#modalAnimacion').modal('show')
-				$('#modalAnimacion-img').attr('src', one);
-	
 				setTimeout(function () {
-					$('#modalAnimacion').modal('hide')
-				}, 5000);
-	
-	
-	 */
+					limpiarTodo()
+					setup()
+				}, 540000);
 
-			$('.modalAnimacion').on('show.bs.modal', function (e) {
-				$('#modalAnimacion-img').addClass('animated flipInY');
-			})
-			$('.modalAnimacion').on('shown.bs.modal', function (e) {
-				$('.modal-backdrop').addClass('modal-backdrop-white');
-			})
+				/* 	$('#modalAnimacion').modal('show')
+					$('#modalAnimacion-img').attr('src', one);
+		
+					setTimeout(function () {
+						$('#modalAnimacion').modal('hide')
+					}, 5000);
+		
+		
+		 */
+
+				$('.modalAnimacion').on('show.bs.modal', function (e) {
+					$('#modalAnimacion-img').addClass('animated flipInY');
+				})
+				$('.modalAnimacion').on('shown.bs.modal', function (e) {
+					$('.modal-backdrop').addClass('modal-backdrop-white');
+				})
+
+			} else {
+				console.log("Nop, no FireFox");
+			}
+
 		}
 
 		function limpiarTodo() {

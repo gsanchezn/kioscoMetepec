@@ -593,6 +593,8 @@
 		}
 
 		function goInactive() {
+			if (navigator.userAgent.search("Firefox") >= 0) {
+				console.log("siiii, es FireFox");
 			window.clearTimeout(clearr);
 			window.clearTimeout(a);
 			window.clearTimeout(b);
@@ -778,6 +780,9 @@
 			$('.modalAnimacion').on('shown.bs.modal', function (e) {
 				$('.modal-backdrop').addClass('modal-backdrop-white');
 			})
+		} else {
+				console.log("Nop, no FireFox");
+			}
 		}
 
 		function limpiarTodo() {
