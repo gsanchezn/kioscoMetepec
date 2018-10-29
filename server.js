@@ -51,7 +51,51 @@ nspThree.on('connection', function(socket) {
 
 var nspFour = io.of('/kiosco4');
 nspFour.on('connection', function(socket) {
-   console.log('someone connected kiosco3');
+   console.log('someone connected kiosco4');
+   socket.on('linkClicked', function(msg){
+    console.log("msg: " + msg);
+    // broadcast to all other users -- originating client does not receive this message.
+    // to see it, open another browser window
+	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room
+  });
+});
+
+var nspFour = io.of('/kiosco5');
+nspFour.on('connection', function(socket) {
+   console.log('someone connected kiosco5');
+   socket.on('linkClicked', function(msg){
+    console.log("msg: " + msg);
+    // broadcast to all other users -- originating client does not receive this message.
+    // to see it, open another browser window
+	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room
+  });
+});
+
+var nspFour = io.of('/kiosco6');
+nspFour.on('connection', function(socket) {
+   console.log('someone connected kiosco6');
+   socket.on('linkClicked', function(msg){
+    console.log("msg: " + msg);
+    // broadcast to all other users -- originating client does not receive this message.
+    // to see it, open another browser window
+	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room
+  });
+});
+
+var nspFour = io.of('/kiosco7');
+nspFour.on('connection', function(socket) {
+   console.log('someone connected kiosco7');
+   socket.on('linkClicked', function(msg){
+    console.log("msg: " + msg);
+    // broadcast to all other users -- originating client does not receive this message.
+    // to see it, open another browser window
+	 socket.broadcast.emit('newClick',  msg) // attention: this is a general broadcas -- check how to emit to a room
+  });
+});
+
+var nspFour = io.of('/kiosco8');
+nspFour.on('connection', function(socket) {
+   console.log('someone connected kiosco8');
    socket.on('linkClicked', function(msg){
     console.log("msg: " + msg);
     // broadcast to all other users -- originating client does not receive this message.

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kiosco Metepec</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Poppins" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.default.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+    <div style="position: absolute;left: 7px;z-index: 99;top: 14px;" class="align-items-center">
+        <a class="" href="kiosco7/">
+            <i class="fa fa-chevron-circle-left fa-1x" aria-hidden="true" style="color: #ffffff"> </i> <span class="text-white">Regresar</span>
+        </a>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="img/logos_metepec.png" style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class=" mt-2 mt-md-0 text-right ml-auto">
+                    <h5 class="text-white align-middle mb-0">SISTEMA DIGITAL MULTISERVICIOS</h5>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main role="main" class="container main-tramites">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center pb-4">Selecciona un trámite para ver video de ayuda</h3>
+
+                <div class="row">
+                    <div class="col-2">
+                        <a class="" id="btn-1" href="#" data-toggle="modal" data-target="#modal1">
+                            <img src="img/predio.svg" class="img-fluid section">
+                            <h5 class="text-center pt-3">Pago Predial</h5>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="" id="btn-2" data-toggle="modal" data-target="#modal2" href="#" data-url="videos/2.mp4">
+                            <img src="img/agua.svg" class="img-fluid section">
+                            <h5 class="text-center pt-3">Pago Agua</h5>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="" id="btn-3" href="#" data-toggle="modal" data-target="#modal3" data-url="videos/3.mp4">
+                            <img src="img/tramitesMunicipales.svg" class="img-fluid section">
+                            <h5 class="text-center pt-3">Pago de Trámites Municipales</h5>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="" id="btn-4" href="#" data-toggle="modal" data-target="#modal4" data-url="videos/4.mp4">
+                            <img src="img/sare.svg" class="img-fluid section">
+                            <h5 class="text-center pt-3">SARE</h5>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="" id="btn-5" href="#" data-toggle="modal" data-target="#modal5" data-url="videos/5.mp4">
+                            <img src="img/atencionCiudadana.svg" class="img-fluid section">
+                            <h5 class="text-center pt-3">Atención Ciudadana</h5>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a class="" id="btn-6" href="#" data-toggle="modal" data-target="#modal6" data-url="videos/6.mp4">
+                            <img src="img/citasenLinea.svg" class="img-fluid section">
+                            <h5 class="text-center pt-3">Citas en Línea para Trámites</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="row pt-2">
+
+                    <div class="col-2">
+                        <a class="" id="btn-7" href="#" data-toggle="modal" data-target="#modal7" data-url="videos/7.mp4">
+                            <img src="img/solicituddeEmpleo.svg" class="img-fluid section">
+                            <h5 class="text-center pt-3">Solicitud de Empleo</h5>
+                        </a>
+                    </div>
+                   
+           
+
+                <div class="col-2">
+                    <a class="" id="btn-9" href="#" data-toggle="modal" data-target="#modal9" data-url="videos/9.mp4">
+                        <img src="img/curp.svg" class="img-fluid section">
+                        <h5 class="text-center pt-3">Obtener Curp</h5>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a class="" id="btn-10" href="#" data-toggle="modal" data-target="#modal10" data-url="videos/10.mp4">
+                        <img src="img/acta.svg" class="img-fluid section">
+                        <h5 class="text-center pt-3">Obtener Acta de Nacimiento</h5>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pago Predial</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="" controls>
+                        <source src="videos/1.mp4" type="video/mp4">
+                        <source src="videos/1.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pago Agua</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/2.mp4" type="video/mp4">
+                        <source src="videos/2.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pago de Trámites municipales</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/3.mp4" type="video/mp4">
+                        <source src="videos/3.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SARE</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/4.mp4" type="video/mp4">
+                        <source src="videos/4.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ATENCIÓN CIUDADANA</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/5.mp4" type="video/mp4">
+                        <source src="videos/5.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CITAS EN LÍNEA PARA TRÁMITES</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/6.mp4" type="video/mp4">
+                        <source src="videos/6.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SOLICITUD DE EMPLEO</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/7.mp4" type="video/mp4">
+                        <source src="videos/7.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">TRANSPAREnCIA</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/8.mp4" type="video/mp4">
+                        <source src="videos/8.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">OBTENER CURP</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/9.mp4" type="video/mp4">
+                        <source src="videos/9.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">OBTENER ACTA DE NACIMIENTO</h5>
+                </div>
+                <div class="modal-body">
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/10.mp4" type="video/mp4">
+                        <source src="videos/10.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <img src="img/logos_metepec.png" class="img-fluid mx-auto d-block" style="max-height: 40px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+
+    <script src="js/Chain.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+
+
+    
+</body>
+
+
+
+</html>
