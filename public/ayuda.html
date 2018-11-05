@@ -19,99 +19,16 @@
 </head>
 
 <body>
-    <div style="position: absolute;left: 7px;z-index: 99;top: 14px;" class="align-items-center">
-        <a class="" href="kiosco1/">
-            <i class="fa fa-chevron-circle-left fa-1x" aria-hidden="true" style="color: #ffffff"> </i> <span class="text-white">Regresar</span>
-        </a>
-    </div>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-        <div class="container">
 
-            <a class="navbar-brand" href="#">
-                <img class="img-fluid" src="img/logos_metepec.png" style="max-height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class=" mt-2 mt-md-0 text-right ml-auto">
-                    <h5 class="text-white align-middle mb-0">SISTEMA DIGITAL MULTISERVICIOS</h5>
-                </div>
-            </div>
-        </div>
-    </nav>
-    
+
     <main role="main" class="container main-tramites">
         <div class="row">
             <div class="col-12">
                 <h3 class="text-center pb-4">Selecciona un trámite para ver video de ayuda</h3>
+                <div class="row enter-items">
 
-                <div class="row">
-                    <div class="col-2">
-                        <a class="" id="btn-1" href="#" data-toggle="modal" data-target="#modal1">
-                            <img src="img/predio.svg" class="img-fluid section">
-                            <h5 class="text-center pt-3">Pago Predial</h5>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a class="" id="btn-2" data-toggle="modal" data-target="#modal2" href="#" data-url="videos/2.mp4">
-                            <img src="img/agua.svg" class="img-fluid section">
-                            <h5 class="text-center pt-3">Pago Agua</h5>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a class="" id="btn-3" href="#" data-toggle="modal" data-target="#modal3" data-url="videos/3.mp4">
-                            <img src="img/tramitesMunicipales.svg" class="img-fluid section">
-                            <h5 class="text-center pt-3">Pago de Trámites Municipales</h5>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a class="" id="btn-4" href="#" data-toggle="modal" data-target="#modal4" data-url="videos/4.mp4">
-                            <img src="img/sare.svg" class="img-fluid section">
-                            <h5 class="text-center pt-3">SARE</h5>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a class="" id="btn-5" href="#" data-toggle="modal" data-target="#modal5" data-url="videos/5.mp4">
-                            <img src="img/atencionCiudadana.svg" class="img-fluid section">
-                            <h5 class="text-center pt-3">Atención Ciudadana</h5>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a class="" id="btn-6" href="#" data-toggle="modal" data-target="#modal6" data-url="videos/6.mp4">
-                            <img src="img/citasenLinea.svg" class="img-fluid section">
-                            <h5 class="text-center pt-3">Citas en Línea para Trámites</h5>
-                        </a>
-                    </div>
                 </div>
-                <div class="row pt-2">
-
-                    <div class="col-2">
-                        <a class="" id="btn-7" href="#" data-toggle="modal" data-target="#modal7" data-url="videos/7.mp4">
-                            <img src="img/solicituddeEmpleo.svg" class="img-fluid section">
-                            <h5 class="text-center pt-3">Solicitud de Empleo</h5>
-                        </a>
-                    </div>
-                   
-           
-
-                <div class="col-2">
-                    <a class="" id="btn-9" href="#" data-toggle="modal" data-target="#modal9" data-url="videos/9.mp4">
-                        <img src="img/curp.svg" class="img-fluid section">
-                        <h5 class="text-center pt-3">Obtener Curp</h5>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <a class="" id="btn-10" href="#" data-toggle="modal" data-target="#modal10" data-url="videos/10.mp4">
-                        <img src="img/acta.svg" class="img-fluid section">
-                        <h5 class="text-center pt-3">Obtener Acta de Nacimiento</h5>
-                    </a>
-                </div>
-
             </div>
-
-        </div>
     </main>
 
 
@@ -358,9 +275,71 @@
         })
     </script>
 
+    <script>
+        $(document).ready(function () {
+            $.getJSON("http://metepec.gob.mx/Kioscosdm/api.php?valor=sistemas").done(function (dataSistema) {
+                console.log(dataSistema);
+                var i = 1;
+                var f = 1;
+                $.each(dataSistema, function (index, img) {
+                    $(".enter-items").append("<div class='col-2'>" +
+                        "<a id='btn-" + i + "' href='#' data-toggle='modal' data-target='#modal" + f + "' data-url='" + img.contenido + "' >" +
+                        "<img src='" + img.imagen + "' class='img-fluid section'>" +
+                        "<h5 class='text-center pt-3'>" + img.titulo + "</h5>" +
+                        "</a>" +
+                        "</div>");
+                    i++;
+                    f++;
+                    console.log(img.titulo);
+                    console.log(img.imagen);
+                    console.log(img.ruta);
+                    console.log(img.contenido);
+                });
+            });
+
+            $.getJSON("http://metepec.gob.mx/Kioscosdm/api.php?valor=sistemas").done(function (dataSistemaModal) {
+                console.log(dataSistemaModal);
+                var t = 1;
+
+                $.each(dataSistemaModal, function (index, img) {
+                    $(".modal-items-circulo").append("<div class='modal fade modal-black' id='modal" + t + "' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' > " +
+                        "<div class='modal-dialog modal-dialog-centered' role='document'>" +
+                        "<div class='modal-content'>" +
+                        "<div class='modal-header'>" +
+                        "<h5 class='modal-title' id='exampleModalLabel'>" + img.titulo + "</h5>" +
+                        "</div>" +
+                        "<div class='modal-body'>" +
+
+                        "<video id='modalAnimacion-img' width='400' controls>" +
+                        "<source src='" + img.contenido + "' type='video/mp4'>" +
+                        "<source src='" + img.contenido + "' type='video/ogg'>" +
+                        "</video>" +
+
+                        "</div>" +
+                        "<div class='modal-footer'>" +
+                        "<img src='../img/logos_metepec.png' class='img-fluid mx-auto d-block' style='max-height: 40px;'>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>");
+                    t++;
+
+                    console.log(img.titulo);
+                    console.log(img.imagen);
+                    console.log(img.ruta);
+                    console.log(img.contenido);
+
+                    <video id="modalAnimacion-img" width="400" controls>
+                        <source src="videos/10.mp4" type="video/mp4">
+                            <source src="videos/10.mp4" type="video/ogg">
+                                Your browser does not support HTML5 video.
+                    </video>
+			});
+                        });
+                        });
+    </script>
 
 
-    
 </body>
 
 
