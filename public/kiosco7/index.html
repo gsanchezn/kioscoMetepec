@@ -302,7 +302,7 @@
 
 					$(".modal-black").modal('hide');
 					$('.modalAnimacion').modal('hide');
-					$('.modalesp').modal('hide');
+					$('#modalesp').modal('hide');
 					$('#modal-anim').removeClass("modalAnimacion");
 					$('#modalAnimacionSli').removeClass("modalesp");
 					$(msg).modal('show');
@@ -311,7 +311,7 @@
 						$(msg).modal('hide');
 						$(".modal-black").modal('hide');
 						$('.modalAnimacion').modal('hide');
-						$('.modalesp').modal('hide');
+						$('#modalesp').modal('hide');
 						$('#modal-anim').addClass("modalAnimacion");
 						$('#modalAnimacionSli').addClass("modalesp");
 					}, 120000);
@@ -350,7 +350,7 @@
 					socket.emit('linkClicked', linkClicked);
 					return false;
 				});
-			}, 2000);
+			}, 900);
 		});
 
 		var timeoutID;
@@ -429,7 +429,7 @@
 				function ceroSlider() {
 
 					document.getElementById('dinamic-title').innerHTML = '';
-					$('.modalesp').modal('hide');
+					$('#modalesp').modal('hide');
 				}
 
 				function first() {
@@ -439,7 +439,7 @@
 				}
 
 				function second() {
-					$('.modalesp').modal('show')
+					$('#modalesp').modal('show')
 
 				}
 
@@ -604,7 +604,7 @@
 
 			// do something
 
-			$('.modalesp').modal('hide');
+			$('#modalesp').modal('hide');
 			$('.modalAnimacion').modal('hide');
 
 			console.log("estado activooo")
